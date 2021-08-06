@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Счётчики,хедер,футер</title>
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <aside class='removed-sidebar'>
+            <span>Здесь будет сайдбар</span>
+        </aside>
+        <main>
+            <header class='removed-header'>Здесь будет шапка</header>
+            <div class="content">
+                <div class="content__left">
+                    <div class="content-top">
+                        <div class="content-top__left">
+                            <div class="action">
+                                <select class="select">
+                                    <option disabled selected value="">Выберите действие</option>
+                                    <option value="действие 1">действие 1</option>
+                                    <option value="действие 2">действие 2</option>
+                                    <option value="действие 3">действие 3</option>
+                                </select>
+                                <button class="green-btn">Выполнить</button>
+                            </div>
+                            <span>Выбрано 3 из 3</span>
+                        </div>
+                        <div class="content-top__right">
+                            <button class="add-article add-btn custom-btn">
+                                <i>
+                                    <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.15625 5.625H6.375V3.84375C6.375 3.79219 6.33281 3.75 6.28125 3.75H5.71875C5.66719 3.75 5.625 3.79219 5.625 3.84375V5.625H3.84375C3.79219 5.625 3.75 5.66719 3.75 5.71875V6.28125C3.75 6.33281 3.79219 6.375 3.84375 6.375H5.625V8.15625C5.625 8.20781 5.66719 8.25 5.71875 8.25H6.28125C6.33281 8.25 6.375 8.20781 6.375 8.15625V6.375H8.15625C8.20781 6.375 8.25 6.33281 8.25 6.28125V5.71875C8.25 5.66719 8.20781 5.625 8.15625 5.625Z" fill="white"/>
+                                        <path d="M6 0.75C3.10078 0.75 0.75 3.10078 0.75 6C0.75 8.89922 3.10078 11.25 6 11.25C8.89922 11.25 11.25 8.89922 11.25 6C11.25 3.10078 8.89922 0.75 6 0.75ZM6 10.3594C3.59297 10.3594 1.64062 8.40703 1.64062 6C1.64062 3.59297 3.59297 1.64062 6 1.64062C8.40703 1.64062 10.3594 3.59297 10.3594 6C10.3594 8.40703 8.40703 10.3594 6 10.3594Z" fill="white"/>
+                                    </svg>
+                                </i>
+                                <span>Добавить счетчик</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="table">
+                        <div class="table__head">
+                            <div class="table__head-title">
+                                <span>Название</span>
+                                <svg class="svg-sort" width="8" height="6" viewBox="0 0 8 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.44095 5.46338C3.47535 5.51334 3.52138 5.5542 3.57508 5.58242C3.62878 5.61064 3.68853 5.62539 3.7492 5.62539C3.80986 5.62539 3.86962 5.61064 3.92331 5.58242C3.97701 5.5542 4.02305 5.51334 4.05745 5.46338L7.43245 0.588375C7.47151 0.532147 7.49442 0.466287 7.49869 0.397952C7.50295 0.329618 7.4884 0.261421 7.45663 0.200773C7.42486 0.140124 7.37707 0.0893432 7.31846 0.0539468C7.25985 0.0185505 7.19267 -0.000107379 7.1242 4.6487e-07H0.374198C0.305889 0.000282618 0.23895 0.0191805 0.180578 0.0546616C0.122207 0.0901427 0.0746116 0.140865 0.0429113 0.201373C0.0112111 0.261881 -0.00339494 0.329886 0.000664049 0.398075C0.00472303 0.466263 0.0272934 0.532055 0.065948 0.588375L3.44095 5.46338Z" fill="#B4B4B4"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="table__rows">
+                            <div class="table__row">
+                                <div>
+                                    <div class="table__check">
+                                        <input type='checkbox' class="checkbox" id='c' />
+                                        <label for='c'></label>
+                                    </div>
+                                    <div class="table__title table__title--green">
+                                        <i></i>
+                                        <span>Google-anal-1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div>
+                                    <div class="table__check">
+                                        <input type='checkbox' class="checkbox" id='c2' />
+                                        <label for='c2'></label>
+                                    </div>
+                                    <div class="table__title table__title--red">
+                                        <i></i>
+                                        <span>Google-anal-2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table__row">
+                                <div>
+                                    <div class="table__check">
+                                        <input type='checkbox' class="checkbox" id='c3' />
+                                        <label for='c3'></label>
+                                    </div>
+                                    <div class="table__title table__title--yellow">
+                                        <i></i>
+                                        <span>Google-anal-3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="edit-block">
+                        <div class="edit-header">
+                            <p class="edit-block__title">Хеддер</p>
+                            <div class="edit-block__item">
+                                <span>Логотип</span>
+                                <div class="edit-header__logo">
+                                    <div class="edit-header__logo-select">
+                                        <input type="file" name="" id="">
+                                        <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M2.125 3V0.75H3.54167V3H5.66667V4.5H3.54167V6.75H2.125V4.5H0V3H2.125ZM4.25 7.5V5.25H6.375V3H11.3333L12.6296 4.5H14.875C15.6542 4.5 16.2917 5.175 16.2917 6V15C16.2917 15.825 15.6542 16.5 14.875 16.5H3.54167C2.7625 16.5 2.125 15.825 2.125 15V7.5H4.25ZM9.20833 14.25C11.1633 14.25 12.75 12.57 12.75 10.5C12.75 8.43 11.1633 6.75 9.20833 6.75C7.25333 6.75 5.66667 8.43 5.66667 10.5C5.66667 12.57 7.25333 14.25 9.20833 14.25ZM6.94167 10.5C6.94167 11.8275 7.95458 12.9 9.20833 12.9C10.4621 12.9 11.475 11.8275 11.475 10.5C11.475 9.1725 10.4621 8.1 9.20833 8.1C7.95458 8.1 6.94167 9.1725 6.94167 10.5Z" fill="#B4B4B4"/>
+                                        </svg>
+                                    </div>
+                                    <div class="edit-header__alt">
+                                        <span>Alt логотипа</span>
+                                        <input type="text" value="Lorem ipsum dolor sit amet, consectetur adipis">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit-block__item">
+                                <span>Добавить <br>                                    новый раздел</span>
+                                <div>
+                                    <div class="edit-header__input">
+                                        <input type="text" placeholder="Введите заголовок">
+                                    </div>
+                                    <div class="edit-header__input">
+                                        <input type="text" placeholder="Ссылка на раздел">
+                                        <button>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.2344 8.4375H9.5625V5.76562C9.5625 5.68828 9.49922 5.625 9.42188 5.625H8.57813C8.50078 5.625 8.4375 5.68828 8.4375 5.76562V8.4375H5.76563C5.68828 8.4375 5.625 8.50078 5.625 8.57812V9.42188C5.625 9.49922 5.68828 9.5625 5.76563 9.5625H8.4375V12.2344C8.4375 12.3117 8.50078 12.375 8.57813 12.375H9.42188C9.49922 12.375 9.5625 12.3117 9.5625 12.2344V9.5625H12.2344C12.3117 9.5625 12.375 9.49922 12.375 9.42188V8.57812C12.375 8.50078 12.3117 8.4375 12.2344 8.4375Z" fill="white"/>
+                                                <path d="M9 1.125C4.65117 1.125 1.125 4.65117 1.125 9C1.125 13.3488 4.65117 16.875 9 16.875C13.3488 16.875 16.875 13.3488 16.875 9C16.875 4.65117 13.3488 1.125 9 1.125ZM9 15.5391C5.38945 15.5391 2.46094 12.6105 2.46094 9C2.46094 5.38945 5.38945 2.46094 9 2.46094C12.6105 2.46094 15.5391 5.38945 15.5391 9C15.5391 12.6105 12.6105 15.5391 9 15.5391Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit-block__item">
+                                <span>Разделы</span>
+                                <div>
+                                    <div class="edit-header__chapters" data-mcs-theme="3d-dark">
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit-header edit-footer">
+                            <p class="edit-block__title">Футер</p>
+                            <div class="edit-block__item">
+                                <span>Добавить <br>                                    новый раздел</span>
+                                <div>
+                                    <div class="edit-header__input">
+                                        <input type="text" placeholder="Введите заголовок">
+                                    </div>
+                                    <div class="edit-header__input">
+                                        <input type="text" placeholder="Ссылка на раздел">
+                                        <button>
+                                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.2344 8.4375H9.5625V5.76562C9.5625 5.68828 9.49922 5.625 9.42188 5.625H8.57813C8.50078 5.625 8.4375 5.68828 8.4375 5.76562V8.4375H5.76563C5.68828 8.4375 5.625 8.50078 5.625 8.57812V9.42188C5.625 9.49922 5.68828 9.5625 5.76563 9.5625H8.4375V12.2344C8.4375 12.3117 8.50078 12.375 8.57813 12.375H9.42188C9.49922 12.375 9.5625 12.3117 9.5625 12.2344V9.5625H12.2344C12.3117 9.5625 12.375 9.49922 12.375 9.42188V8.57812C12.375 8.50078 12.3117 8.4375 12.2344 8.4375Z" fill="white"/>
+                                                <path d="M9 1.125C4.65117 1.125 1.125 4.65117 1.125 9C1.125 13.3488 4.65117 16.875 9 16.875C13.3488 16.875 16.875 13.3488 16.875 9C16.875 4.65117 13.3488 1.125 9 1.125ZM9 15.5391C5.38945 15.5391 2.46094 12.6105 2.46094 9C2.46094 5.38945 5.38945 2.46094 9 2.46094C12.6105 2.46094 15.5391 5.38945 15.5391 9C15.5391 12.6105 12.6105 15.5391 9 15.5391Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="edit-block__item">
+                                <span>Разделы</span>
+                                <div>
+                                    <div class="edit-header__chapters" data-mcs-theme="3d-dark">
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="edit-header__chapter">
+                                            <div>
+                                                <strong>Главная</strong>
+                                                <span>https://www.gb465e.com</span>
+                                            </div>
+                                            <button>
+                                                <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M14.9668 0H6.9668C3.6578 0 0.966797 2.691 0.966797 6V19C0.966797 19.2652 1.07215 19.5196 1.25969 19.7071C1.44723 19.8946 1.70158 20 1.9668 20H14.9668C18.2758 20 20.9668 17.309 20.9668 14V6C20.9668 2.691 18.2758 0 14.9668 0ZM18.9668 14C18.9668 16.206 17.1728 18 14.9668 18H2.9668V6C2.9668 3.794 4.7608 2 6.9668 2H14.9668C17.1728 2 18.9668 3.794 18.9668 6V14Z" fill="white"/>
+                                                    <path d="M5.9668 12.9869V14.9859H7.9658L13.4948 9.46394L11.4968 7.46594L5.9668 12.9869Z" fill="white"/>
+                                                    <path d="M14.4375 8.522L12.4395 6.522L13.9625 5L15.9625 6.999L14.4375 8.522Z" fill="white"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="edit-block__item">
+                                <span>Соцсети</span>
+                                <div>
+                                    <div class="edit-block__social">
+                                        <div class="edit-block__social-item">
+                                            <img src="img/facebook.svg" alt="">
+                                            <input type="text" placeholder="Ссылка на раздел">
+                                        </div>
+                                        <div class="edit-block__social-item">
+                                            <img src="img/vk.svg" alt="">
+                                            <input type="text" placeholder="Ссылка на раздел">
+                                        </div>
+                                        <div class="edit-block__social-item">
+                                            <img src="img/instagram.svg" alt="">
+                                            <input type="text" placeholder="Ссылка на раздел">
+                                        </div>
+                                        <div class="edit-block__social-item">
+                                            <img src="img/twitter.svg" alt="">
+                                            <input type="text" placeholder="Ссылка на раздел">
+                                        </div>
+                                        <div class="edit-block__social-item">
+                                            <div class="edit-block__social-telegram">
+                                                <svg width="15" height="13" viewBox="0 0 15 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M13.9875 0.085478L0.700408 5.38029C-0.206384 5.75666 -0.201138 6.27941 0.534038 6.51251L3.94537 7.61221L11.8382 2.46609C12.2114 2.23144 12.5524 2.35767 12.2721 2.61478L5.87736 8.5787H5.87586L5.87736 8.57948L5.64205 12.2131C5.98678 12.2131 6.13891 12.0497 6.33226 11.8569L7.98921 10.1919L11.4358 12.8226C12.0713 13.1843 12.5277 12.9984 12.6858 12.2147L14.9483 1.19602C15.1798 0.236493 14.5938 -0.197965 13.9875 0.085478Z" fill="white"/>
+                                                </svg>
+                                            </div>
+                                            <input type="text" placeholder="Ссылка на раздел">
+                                        </div>
+                                        <div class="edit-block__social-item">
+                                            <img src="img/ok.svg" alt="">
+                                            <input type="text" placeholder="Ссылка на раздел">
+                                        </div>
+                                        <div class="edit-block__social-item">
+                                            <img src="img/dzen.svg" alt="">
+                                            <input type="text" placeholder="Ссылка на раздел">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__right">
+                    <div class="content__right-inner">
+                        <p class="content__right-title">Добавление нового счетчика</p>
+                        <div class="analitic">
+                            <div class="analitic__item">
+                                <span>Название</span>
+                                <div>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="analitic__item">
+                                <span>Дата установки</span>
+                                <div>
+                                    <strong>23.03.2020</strong>
+                                </div>
+                            </div>
+                            <div class="analitic__item">
+                                <span>Состояние</span>
+                                <div class="analitic__item-title">
+                                    <i></i>
+                                    <span>Подключен</span>
+                                </div>
+                            </div>
+                            <div class="analitic__item analitic__item--textarea">
+                                <span>Содержимое</span>
+                                <div class="">
+                                    <textarea name="" id="" cols="30" rows="10">
+                                        <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+    m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+ 
+    ym(44551003, "init", {
+         clickmap:true,
+         trackLinks:true,
+         accurateTrackBounce:true,
+         webvisor:true
+    });
+ </script>
+ <noscript><div><img src="https://mc.yandex.ru/watch/44551003" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+ <!-- /Yandex.Metrika counter -->
+                                    </textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__right-nav">
+                        <button class="save-btn custom-btn">
+                            <i>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15.7751 6H14.4522C14.1645 6 13.8909 6.13869 13.7217 6.37644L9.28767 12.5467L7.2794 9.75024C7.11017 9.51532 6.83939 9.37381 6.54887 9.37381H5.22601C5.04267 9.37381 4.93548 9.58325 5.04267 9.73326L8.55714 14.6241C8.64016 14.7404 8.74961 14.8352 8.87641 14.9005C9.00321 14.9659 9.14371 15 9.28626 15C9.42882 15 9.56932 14.9659 9.69612 14.9005C9.82292 14.8352 9.93237 14.7404 10.0154 14.6241L15.9556 6.35946C16.0656 6.20945 15.9584 6 15.7751 6Z" fill="white"></path>
+                                    <path d="M10.5 0C4.70156 0 0 4.70156 0 10.5C0 16.2984 4.70156 21 10.5 21C16.2984 21 21 16.2984 21 10.5C21 4.70156 16.2984 0 10.5 0ZM10.5 19.2188C5.68594 19.2188 1.78125 15.3141 1.78125 10.5C1.78125 5.68594 5.68594 1.78125 10.5 1.78125C15.3141 1.78125 19.2188 5.68594 19.2188 10.5C19.2188 15.3141 15.3141 19.2188 10.5 19.2188Z" fill="white"></path>
+                                </svg>
+                            </i>
+                            <span>Сохранить</span>
+                        </button>
+                        <button class="delete-btn custom-btn">
+                            <i>
+                                <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M11 0C8.08262 0 5.28473 1.15893 3.22183 3.22183C1.15893 5.28473 0 8.08262 0 11C0 13.9174 1.15893 16.7153 3.22183 18.7782C5.28473 20.8411 8.08262 22 11 22C13.9174 22 16.7153 20.8411 18.7782 18.7782C20.8411 16.7153 22 13.9174 22 11C22 8.08262 20.8411 5.28473 18.7782 3.22183C16.7153 1.15893 13.9174 0 11 0V0ZM11 19.9375C8.62963 19.9375 6.35634 18.9959 4.68023 17.3198C3.00413 15.6437 2.0625 13.3704 2.0625 11C2.0625 8.62963 3.00413 6.35634 4.68023 4.68023C6.35634 3.00413 8.62963 2.0625 11 2.0625C13.3704 2.0625 15.6437 3.00413 17.3198 4.68023C18.9959 6.35634 19.9375 8.62963 19.9375 11C19.9375 13.3704 18.9959 15.6437 17.3198 17.3198C15.6437 18.9959 13.3704 19.9375 11 19.9375Z" fill="#FFFFFF"></path>
+                                    <path d="M14.4375 5.5L11 8.9375L7.5625 5.5L5.5 7.5625L8.9375 11L5.5 14.4375L7.5625 16.5L11 13.0625L14.4375 16.5L16.5 14.4375L13.0625 11L16.5 7.5625L14.4375 5.5Z" fill="#FFFFFF"></path>
+                                </svg>
+                            </i>
+                            <span>Удалить</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/datapicker.js"></script>
+    <script src="js/chart.min.js"></script>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
